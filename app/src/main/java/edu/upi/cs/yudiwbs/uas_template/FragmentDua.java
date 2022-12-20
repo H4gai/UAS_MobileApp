@@ -1,5 +1,9 @@
 package edu.upi.cs.yudiwbs.uas_template;
 
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +11,7 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,6 +26,7 @@ import edu.upi.cs.yudiwbs.uas_template.databinding.FragmentSatuBinding;
 public class FragmentDua extends Fragment {
 
     private FragmentDuaBinding binding;
+
 
     ArrayList<Hasil> alHasil = new ArrayList<>();
     AdapterHasil adapter;
@@ -71,4 +77,6 @@ public class FragmentDua extends Fragment {
         });
         return view;
     }
+
+
 }
